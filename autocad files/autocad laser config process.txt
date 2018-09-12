@@ -1,0 +1,26 @@
+Some notes on using autocad with an epilog laser cutter.
+
+If lines aren't a polyline:
+- select line on shape
+pedit
+- select rest of shape
+join
+
+General setup:
+- select shape to offset because laser doesn't account for cut width
+offset in 0.1, out 0.2
+- make new cuts layer under layer properties, select color
+- select offsets, go to properties, move layer
+- output->plot (or page setup manager the first time)
+- set output to engr-epilog-pc3
+- plot style epilog.ctb
+- drawing orientation portrait
+- pick square paper size, eg. 48x48"
+- change plot area window, set to same size as paper
+- change scaling to appropriate units
+- printer is 12 wide, 18 tall
+- printer properties for print settings
+
+12in=304.8
+18in=457.2mm
+48in=1219.2mm
