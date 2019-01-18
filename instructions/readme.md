@@ -178,7 +178,13 @@ The middle pin on the pots should be connected to the "S" row. The other two pin
 
 ## Step 21
 
-Upload the example arduino sketch.
+Uploading the program.
+
+The Arduinos we used have a ch340g usb to serial converter for programming the microcontroller. For your computer to recognize the arduino the ch340g driver needs to be installed. I got it from this link and haven't had any problems:  https://kig.re/2014/12/31/how-to-use-arduino-nano-mini-pro-with-CH340G-on-mac-osx-yosemite.html
+
+Plug in the arduino via usb cable.
+
+Open the arduino sketch (pot_control.ino unless you are using a bluetooth module). Under Tools->Board select Arduino/Genuino Uno. Under Tools->Port select a port (probably only one option will be available, otherwise try another if the first doesn't work). Then click Upload (or ctrl+u).
 
 ## Step 22
 
